@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}RPL Django{% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'mahasiswa/css/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Praktikum RPL - Django</h1>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <p>&copy; 2025 - Praktikum</p>
+  </footer>
+  <script src="{% static 'mahasiswa/js/main.js' %}"></script>
+</body>
+</html>
