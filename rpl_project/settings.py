@@ -108,8 +108,7 @@ STATICFILES_DIRS = [
 ]
 
 
-STATIC_ROOT = [ BASE_DIR / 'staticfiles'
-]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # WhiteNoise static file compression
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
