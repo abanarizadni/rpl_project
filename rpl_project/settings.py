@@ -99,20 +99,15 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Static files
-STATIC_URL = 'static/'
-
+STATIC FILES
+STATIC_URL = '/static/'        
 STATICFILES_DIRS = [
-
-    BASE_DIR / 'static',
+    BASE_DIR / "mahasiswa" / "static",
 ]
 
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# WhiteNoise static file compression
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-
-
+# 🧱 DEFAULT PRIMARY KEY
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
